@@ -1,0 +1,498 @@
+{
+	"info": {
+		"_postman_id": "1379fc3f-6acf-4b0e-ba12-c68a44cb377d",
+		"name": "bilt",
+		"description": "This a collection of api calls for the currency calculator",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "add currency",
+			"item": [
+				{
+					"name": "add Euro to Usd",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"base\": \"euro\",\n\t\"quote\": \"usd\",\n\t\"rate\": 1.25\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/currency",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"currency"
+							]
+						},
+						"description": "Adding currency"
+					},
+					"response": []
+				},
+				{
+					"name": "add Yen to usd",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"base\": \"yen\",\n\t\"quote\": \"usd\",\n\t\"rate\": 1.00\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/currency",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"currency"
+							]
+						},
+						"description": "Adding currency"
+					},
+					"response": []
+				},
+				{
+					"name": "add Euro to Yen",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"base\": \"euro\",\n\t\"quote\": \"yen\",\n\t\"rate\": 1.50\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/currency",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"currency"
+							]
+						},
+						"description": "Adding currency"
+					},
+					"response": []
+				},
+				{
+					"name": "add CAD to USD",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"base\": \"cad\",\n\t\"quote\": \"usd\",\n\t\"rate\": 2.50\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/currency",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"currency"
+							]
+						},
+						"description": "Adding currency"
+					},
+					"response": []
+				},
+				{
+					"name": "add CAD to ARS",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"base\": \"cad\",\n\t\"quote\": \"ars\",\n\t\"rate\": 100.00\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/currency",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"currency"
+							]
+						},
+						"description": "Adding currency"
+					},
+					"response": []
+				},
+				{
+					"name": "add AUD to CNY",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"base\": \"aud\",\n\t\"quote\": \"cny\",\n\t\"rate\": 11.00\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/currency",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"currency"
+							]
+						},
+						"description": "Adding currency"
+					},
+					"response": []
+				},
+				{
+					"name": "add CUP to MXN",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"base\": \"CUP\",\n\t\"quote\": \"MXN\",\n\t\"rate\": 2.00\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/currency",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"currency"
+							]
+						},
+						"description": "Adding currency"
+					},
+					"response": []
+				}
+			],
+			"protocolProfileBehavior": {}
+		},
+		{
+			"name": "get rates for specific currency",
+			"item": [
+				{
+					"name": "get euro",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/currency/euro",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"currency",
+								"euro"
+							]
+						},
+						"description": "Adding currency"
+					},
+					"response": []
+				},
+				{
+					"name": "get usd",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/currency/usd",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"currency",
+								"usd"
+							]
+						},
+						"description": "Adding currency"
+					},
+					"response": []
+				},
+				{
+					"name": "get cad",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/currency/cad",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"currency",
+								"cad"
+							]
+						},
+						"description": "Adding currency"
+					},
+					"response": []
+				},
+				{
+					"name": "get yen",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/currency/yen",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"currency",
+								"yen"
+							]
+						},
+						"description": "Adding currency"
+					},
+					"response": []
+				},
+				{
+					"name": "get aud",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/currency/aud",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"currency",
+								"aud"
+							]
+						},
+						"description": "Adding currency"
+					},
+					"response": []
+				}
+			],
+			"protocolProfileBehavior": {}
+		},
+		{
+			"name": "convert currency",
+			"item": [
+				{
+					"name": "Euro to Usd",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"from\": \"euro\",\n\t\"to\": \"usd\",\n\t\"amount\": 1\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/currency/convert",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"currency",
+								"convert"
+							]
+						},
+						"description": "Adding currency"
+					},
+					"response": []
+				},
+				{
+					"name": "Yen to usd",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"from\": \"yen\",\n\t\"to\": \"usd\",\n\t\"amount\": 25.00\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/currency/convert",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"currency",
+								"convert"
+							]
+						},
+						"description": "Adding currency"
+					},
+					"response": []
+				},
+				{
+					"name": "Euro to Yen",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"from\": \"euro\",\n\t\"to\": \"yen\",\n\t\"amount\": 300.00\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/currency/convert",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"currency",
+								"convert"
+							]
+						},
+						"description": "Adding currency"
+					},
+					"response": []
+				},
+				{
+					"name": "CAD to USD",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"from\": \"cad\",\n\t\"to\": \"usd\",\n\t\"amount\": 100.00\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/currency/convert",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"currency",
+								"convert"
+							]
+						},
+						"description": "Adding currency"
+					},
+					"response": []
+				},
+				{
+					"name": "AUD to CNY",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"from\": \"aud\",\n\t\"to\": \"cny\",\n\t\"amount\": 11.00\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/currency/convert",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"currency",
+								"convert"
+							]
+						},
+						"description": "Adding currency"
+					},
+					"response": []
+				}
+			],
+			"protocolProfileBehavior": {}
+		},
+		{
+			"name": "get all currencys",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": ""
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}
